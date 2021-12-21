@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans;
+}
+
+#container {
+    margin: 100px auto 0;
+    height: 100vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 5% 0;
+}
+
+button {
+    cursor: pointer;
+    border: 4px solid black;
+    margin: 0 5px;
+    transition: all 0.2s;
+    padding: 8%;
+    border-radius: 50%;
+}
+
+#rock {
+    background: url('images/rock.jpg');
+}
+#paper {
+    background: url('images/paper.jpg');
+}
+#scissors {
+    background: url('images/scissors.jpg');
+}
+#rock, #paper, #scissors {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.button-win {
+    border: 4px solid #4ecf4e;
+    box-shadow: 0px 0px 20px #4ecf4e;
+}
+.button-tie {
+    border: 4px solid #d6800f;
+    box-shadow: 0px 0px 20px #d6800f;
+}
+.button-loss {
+    border: 4px solid #e21616;
+    box-shadow: 0px 0px 20px #e21616;
+}
+
+#computer-choice {
+    width: 50%;
+}
+
+#replay {
+    cursor: pointer;
+}
+#results {
+    text-align: center;
+    height: 20%;
+}
+
+.computerSelection {
+    /* background: pink; */
+    height: 200px;
+}
